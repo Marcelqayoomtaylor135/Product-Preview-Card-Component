@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://github.com/Marcelqayoomtaylor135/Product-Preview-Card-Component)
+- Live Site URL: [Live Site](https://main--product-card-preview.netlify.app/)
 
 ## My process
 
@@ -58,7 +58,7 @@ In future projects, I would like to be able to implement SCSS syntax faster and 
 
 ### Useful resources
 
-- [Example resource 1](https://www.w3schools.com/cssref/) - W3Schools helped me a lot as it was my main reference for css syntax
+- [CSS Referemnce](https://www.w3schools.com/cssref/) - W3Schools helped me a lot as it was my main reference for css syntax
 
 ## Author
 
