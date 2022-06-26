@@ -1,94 +1,96 @@
-$backgroundColor: hsl(30, 38%, 92%);
+@import "colors";
+
+@mixin simple-flex($justify-content: flex-start, $align-items: stretch){
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin body-copy{
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 14px;
+    color: $darkgrayishblue;
+}
 
 html {
     height: 100%;
 }
 
 body {
+    @include simple-flex(center, center);
     height: 100%;
-    background-color: $backgroundColor;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: $cream;
 }
 
 #product-card {
-    display: flex;
+    @include simple-flex();
     width: 660px;
     height: 500px;
-    background-color: white;
+    background-color: $white;
     border-radius: 15px;
 
     #product-image {
         width: 50%;
-        background-image: url("../images/image-product-desktop.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+        background: {
+            image: url("../images/image-product-desktop.jpg");
+            size: cover;
+            repeat: no-repeat;
+            position: center;
+        }
         border-radius: 15px 0 0 15px;
     }
 
     #product-info {
         width: 50%;
         margin: 6%;
-        display: flex;
+        @include simple-flex(space-around);
         flex-direction: column;
-        justify-content: space-around;
 
-        h3 {
-            font-family: "Montserrat";
-            font-weight: 500;
-            font-size: 14px;
-            letter-spacing: 3px;
-            color: hsl(228, 12%, 48%);
+        * {
             margin: 0;
+        }
+        
+        h3 {
+            @include body-copy;
+            letter-spacing: 3px;
         }
 
         h1 {
             font-family: "Fraunces";
             font-weight: 700;
-            margin: 0;
         }
 
         p {
-            font-family: "Montserrat";
-            font-weight: 500;
-            font-size: 14px;
-            color: hsl(228, 12%, 48%);
-            margin: 0;
+            @include body-copy;
         }
 
         span {
-            display: flex;
-            align-items: center;
+            @include simple-flex(-content, center);
 
             h2 {
                 font-family: "Fraunces";
                 font-weight: 700;
-                color: hsl(158, 36%, 37%);
+                color: $darkcyan;
                 font-size: 28px;
-                margin: 0;
             }
 
             p {
                 text-decoration: line-through;
-                
                 margin-left: 10%;
             }
         }
 
         button {
+            @include simple-flex(center, center);
             border: 0px;
             border-radius: 8px;
             width: 100%;
-            background-color: hsl(158, 36%, 37%);
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            background-color: $darkcyan;
             padding: 15px 0px;
 
             &:hover {
-                background-color: hsl(158, 37%, 24%);
+                background-color: $darkercyan;
                 cursor: pointer;
             }
             
@@ -96,11 +98,9 @@ body {
                 margin-right: 4%;
             }
 
-            p {
-                color: white;
-                font-family: "Montserrat";
-                font-weight: 500;
-                font-size: 14px; 
+            p {                
+                @include body-copy;
+                color: $white;
             }
        
         }
