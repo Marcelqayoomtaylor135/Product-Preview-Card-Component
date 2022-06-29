@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   height: 100%;
 }
@@ -14,10 +18,10 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
-  width: 660px;
+  max-width: 640px;
   height: 500px;
   background-color: hsl(0deg, 0%, 100%);
-  border-radius: 15px;
+  border-radius: 10px;
 }
 #product-card #product-image {
   width: 50%;
@@ -29,7 +33,7 @@ body {
 }
 #product-card #product-info {
   width: 50%;
-  margin: 6%;
+  padding: 6%;
   display: flex;
   justify-content: space-around;
   align-items: stretch;
@@ -55,18 +59,18 @@ body {
   font-size: 14px;
   color: hsl(228deg, 12%, 48%);
 }
-#product-card #product-info span {
+#product-card #product-info > div {
   display: flex;
   justify-content: -content;
   align-items: center;
 }
-#product-card #product-info span h2 {
+#product-card #product-info > div h2 {
   font-family: "Fraunces";
   font-weight: 700;
   color: hsl(158deg, 36%, 37%);
   font-size: 28px;
 }
-#product-card #product-info span p {
+#product-card #product-info > div p {
   text-decoration: line-through;
   margin-left: 10%;
 }
@@ -98,10 +102,11 @@ body {
 @media (max-width: 375px) {
   #product-card {
     flex-direction: column;
+    margin: 6%;
     height: 650px;
   }
   #product-card #product-image {
-    border-radius: 15px 15px 0 0;
+    border-radius: 10px 10px 0 0;
     height: 40%;
     width: 100%;
     background-image: url("../images/image-product-mobile.jpg");

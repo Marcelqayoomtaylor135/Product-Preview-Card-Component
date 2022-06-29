@@ -13,6 +13,10 @@
     color: $darkgrayishblue;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     height: 100%;
 }
@@ -25,10 +29,10 @@ body {
 
 #product-card {
     @include simple-flex();
-    width: 660px;
+    max-width: 640px;
     height: 500px;
     background-color: $white;
-    border-radius: 15px;
+    border-radius: 10px;
 
     #product-image {
         width: 50%;
@@ -43,7 +47,7 @@ body {
 
     #product-info {
         width: 50%;
-        margin: 6%;
+        padding: 6%;
         @include simple-flex(space-around);
         flex-direction: column;
 
@@ -65,7 +69,7 @@ body {
             @include body-copy;
         }
 
-        span {
+        > div {
             @include simple-flex(-content, center);
 
             h2 {
@@ -113,11 +117,11 @@ body {
 
     #product-card {
         flex-direction: column;
-
+        margin: 6%;
         height: 650px;
 
         #product-image {
-            border-radius: 15px 15px 0 0;
+            border-radius: 10px 10px 0 0;
             height: 40%;
             width: 100%;
             background-image: url("../images/image-product-mobile.jpg");
