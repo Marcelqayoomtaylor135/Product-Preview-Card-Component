@@ -3,13 +3,16 @@
 This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa).
 
 ## Table of contents
-
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
+- [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
 ## Overview
@@ -17,7 +20,6 @@ This is a solution to the [Product preview card component challenge on Frontend 
 ### The challenge
 
 Users should be able to:
-
 - View the optimal layout depending on their device's screen size
 - See hover and focus states for interactive elements
 
@@ -45,7 +47,6 @@ Users should be able to:
 
 How to take advantage of SCSS' useful nesting and variable features. 
 
-
 ### Continued development
 
 In future projects, I would like to be able to implement SCSS syntax faster and more accurately. I would also like to be able to incorporate mixins throughout. 
@@ -62,4 +63,3 @@ In future projects, I would like to be able to implement SCSS syntax faster and 
 ## Acknowledgments
 
 Thank you for the challenge and design Frontend Mentor! (https://www.frontendmentor.io/)
-
